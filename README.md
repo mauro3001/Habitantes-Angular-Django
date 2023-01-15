@@ -2,13 +2,20 @@
 
 Procedimiento en general del despliegue. 
 
-Para el apartado *Backend*, utilizando django rest serializer, lo que se debe hacer:
-- Activar el entorno virtual, el caso de linux
+Para el apartado **Backend**, utilizando django rest serializer, lo que se debe hacer:
+- Creamos el entorno virtual:
+            python -m virtualenv venv
+- Activamos el entorno virtual, el caso de linux:
 	source venv/bin/activate
-- Levantar el servidor con el puerto por defecto el 8000, ya que los endpoints están consumidos en angular por este puerto
+- Actualizamos la versión de django y instalamos los módulos que vamos a trabajar:
+	- sudo pip install django --upgrade
+	- pip install django-cors-headers
+	- pip install djangorestframework
+
+- Levantar el servidor con el puerto por defecto el 8000, ya que los endpoints están consumidos en angular por este puerto:
 	python manage.py runserver
 
-Si esto no funciona puede ser porque los módulos no están instalados o un error en la versión de Django, los comandos de  las installed_apps para este desarrollo son los siguientes:
+Si esto no funciona puede ser porque los módulos no están instalados o un error en la versión de Django, los comandos de  las installed_apps para este desarrollo son los siguientes, son los mismos dados en los pasos anteriores:
 
 - sudo pip install django --upgrade
 - pip install django-cors-headers
@@ -16,7 +23,7 @@ Si esto no funciona puede ser porque los módulos no están instalados o un erro
 
 Luego de hacer esto volvemos a intentar con el comando: python manage.py runserver.
 
-Para el *Frontend*, si no se encuentran las librerías de node_modules, pues dentro de el proyecto se procede a:
+Para el **Frontend**, si no se encuentran las librerías de node_modules, pues dentro de el proyecto se procede a:
 - Ejecutar el siguiente comando para instalar las librerías faltantes:
 	npm install
 - Se levanta el proyecto que correrá en el puerto 4200 

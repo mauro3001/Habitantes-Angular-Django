@@ -1,0 +1,38 @@
+.fondo1 {
+    background: url("https://images.unsplash.com/photo-1532024802178-20dbc87a312a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80") #000;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.card{
+    width: 1500px;
+    background: #ffffffdc;
+    border-radius: 10px;
+}
+
+form{
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 6%;
+}
+
+select{
+    width: 1500px;
+}
+
+.icon{
+    padding-left: 8%;
+}
+
+.center-content{
+    text-align: center;
+}
+
+.espacio{
+    padding-left: 8%;
+    padding-top: 2%;
+}
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

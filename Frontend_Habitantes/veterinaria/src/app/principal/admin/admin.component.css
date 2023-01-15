@@ -1,0 +1,99 @@
+/*Este css es para las cajitas de la pagina principal con elementos animados, a sido basado en un desarrollo de internet,
+esto se detalla, ya que hay atributos avanzados utilizados en ciertos elementos*/
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+}
+
+.layout_padding {
+  padding-bottom: 90px;
+}
+
+.main_content {
+  position: relative;
+}
+
+.main_content .main_content_bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.main_content .main_content_bg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: .1;
+}
+
+.service_section {
+  position: relative;
+}
+
+.service_section .box {
+  margin-top: 45px;
+  text-align: center;
+  background-color: #ffffff;
+  padding: 45px 15px;
+  border-radius: 15px;
+  -webkit-box-shadow: 5px 5px 7px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 5px 5px 7px 0 rgba(0, 0, 0, 0.15);
+}
+
+.service_section .box:hover {
+  cursor: pointer;
+  background-color: #55e9bc;
+  color: azure;
+}
+
+.service_section .box .img-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.service_section .box .img-box img {
+  max-width: 150px;
+  max-height: 150px;
+  -webkit-filter: invert(46%) sepia(3%) saturate(3571%) hue-rotate(145deg) brightness(94%) contrast(91%);
+          filter: invert(46%) sepia(3%) saturate(3571%) hue-rotate(145deg) brightness(94%) contrast(91%);
+}
+
+.service_section .box .detail-box {
+  margin-top: 15px;
+}
+
+.service_section .box .detail-box h5 {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.service_section .box .detail-box p {
+  margin-bottom: 0;
+}
+
+.service_section .btn-box {
+  margin-top: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+

@@ -1,0 +1,41 @@
+<div class="main_content">
+  <div class="main_content_bg">
+    <img src="../assets/images/content-bg.jpg" alt="">
+  </div>
+  <div class="espacio1">
+  <div>
+    <div class="row espacio2">
+      <div class="card card1">
+        <div class="card-body">
+          <table class="table table-striped center1">
+            <thead>
+              <th>#</th>
+              <th>Ciudad</th>
+              <th>Editar</th>
+              <th>Borrar</th>
+            </thead>
+            <tbody>
+
+              <tr *ngFor="let ci of ciudad">
+                <td>{{ ci.id }}</td>
+                <td>{{ ci.ciudad }}</td>
+                <td><button (click)="editarCiudad(ci.id)" class="btn btn-warning">Editar</button></td>
+                <td><button (click)="eliminarCiudad(ci.id)" class="btn btn-danger">Borrar</button></td>
+              </tr>
+            </tbody>
+          </table>
+          <button type="submit" (click)='nuevaCiudad()' class="btn btn-success salto">Nueva Ciudad</button>
+          <button type="submit" (click)='usuarios()' class="btn btn-primary salto">Usuarios</button>
+          <button
+                    id="back"
+                    type="button"
+                    class="btn btn-dark"
+                    (click)="regresar()"
+                  >
+                    <i class="fa fa-home"><p class="b1t">Regresar</p></i>
+                  </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>

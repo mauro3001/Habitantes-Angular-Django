@@ -1,0 +1,144 @@
+<div class="main_content">
+  <div class="main_content_bg">
+    <img src="../assets/images/content-bg.jpg" alt="">
+  </div>
+  <div class="espacio1">
+    <div class="card">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img
+            src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1974&q=80"
+            class="img-fluid rounded-start"
+          />
+        </div>
+        <div class="col-md-8 campos">
+          <div class="card-body">
+            <div class="container">
+              <form
+                [formGroup]="formUsuario"
+                class="row g-3"
+                (ngSubmit)="postform(formUsuario.value)"
+              >
+                <p class="estilo">Registrate</p>
+                <div class="col-md-4">
+                  <label for="nombre" class="form-label">Nombres</label>
+                  <input
+                    placeholder="Nombre"
+                    type="text"
+                    class="form-control"
+                    id="nombre"
+                    formControlName="nombres"
+                  />
+                </div>
+
+                <div class="col-md-4">
+                  <label for="apellidos" class="form-label">Apellidos</label>
+                  <input
+                    placeholder="Apellidos"
+                    type="text"
+                    class="form-control"
+                    id="apellidos"
+                    formControlName="apellidos"
+                  />
+                </div>
+
+                <div class="col-md-4">
+                  <label for="direccion" class="form-label">Direccion</label>
+                  <input
+                    placeholder="Direccion"
+                    type="text"
+                    class="form-control"
+                    id="direccion"
+                    formControlName="direccion"
+                  />
+                </div>
+
+                <div class="col-md-4">
+                  <label for="telefono" class="form-label">Teléfono</label>
+                  <input
+                    placeholder="Teléfono"
+                    type="number"
+                    class="form-control"
+                    id="telefono"
+                    formControlName="telefono"
+                    numbersOnly
+                    onkeypress="return (event.charCode >= 48 && event.charCode <= 57)"
+                  />
+                </div>
+
+                <div class="col-md-4">
+                  <label for="cedula" class="form-label"
+                    >Cedula</label
+                  >
+                  <input
+                    placeholder="Cedula"
+                    type="text"
+                    class="form-control"
+                    id="cedula"
+                    formControlName="cedula"
+                  />
+                </div>
+
+                <div class="col-md-4">
+                  <label for="ciudad" class="form-label"
+                    >Seleccione la ciudad</label
+                  >
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                    type="text"
+                    id="ciudad"
+                    formControlName="ciudad"
+                  >
+                    <option value="" disabled selected>
+                      Seleccione una opción
+                    </option>
+                    <option value="1">Leticia</option>
+                    <option value="2">Apartado</option>
+                    <option value="3">Armenia</option>
+                    <option value="4">Arauca</option>
+                    <option value="5">Arauquita</option>
+                    <option value="6">Almeida</option>
+                    <option value="7">Barbosa</option>
+                    <option value="8">Bello</option>
+                    <option value="9">Bucaramanga</option>
+                    <option value="10">Bogota</option>
+                    <option value="11">Barranquila</option>
+                    <option value="12">Cali</option>
+                    <option value="13">Cartagena</option>
+                    <option value="14">Cucuta</option>
+                    <option value="15">Pereira</option>
+                    <option value="16">Santa Marta</option>
+                    <option value="17">Manizales</option>
+                    <option value="18">Valledupar</option>
+                    <option value="19">Pasto</option>
+                    <option value="20">Envigado</option>
+                    <option value="21">Monteria</option>
+                  </select>
+                </div>
+
+                <div class="d-grid gap-2 d-md-block estilos">
+                  <button type="submit" class="btn btn-success register">
+                    Registrar
+                  </button>
+                  <button class="btn btn-secondary" type="reset">
+                    Limpiar Formulario
+                  </button>
+
+                  <button
+                    id="back"
+                    type="button"
+                    class="btn btn-dark"
+                    (click)="regresar()"
+                  >
+                    <i class="fa fa-home"><p class="b1t">Regresar</p></i>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
